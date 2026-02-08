@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Celebración 62 Carmen</title>
+        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <div class="floral-background"></div>
+
+        <section id="welcome-screen" class="welcome-overlay">
+            <div class="welcome-content">
+                <span class="sub-text">Invitación Digital</span>
+                <h1 class="cursive-font">Carmen</h1>
+                <button id="btn-start" class="prisma-button">
+                    <i class="fas fa-envelope-open-text"></i> ABRIR INVITACIÓN
+                </button>
+            </div>
+        </section>
+
+        <main id="main-content" class="hidden">
+
+            <header class="glass-card hero-card">
+                <span class="label">Festejando mis</span>
+                <div class="age-display">
+                    <span class="number">62</span>
+                </div>
+                <div class="divider"></div>
+                <p class="quote-text">
+                    "La vida no es solo para ser vivida: ¡hay que celebrarla!
+                    Yo voy a celebrar un día muy especial:
+                    <br><strong>¡El día que debuté en el universo!</strong>"
+                </p>
+            </header>
+
+            <section class="glass-card details-card">
+                <div class="detail-row">
+                    <div class="icon-box"><i class="far fa-calendar-alt"></i></div>
+                    <div class="info-box">
+                        <h3>Sábado 14 de Febrero</h3>
+                        <p>21:00 hs</p>
+                    </div>
+                </div>
+
+                <div class="detail-row">
+                    <div class="icon-box"><i class="fas fa-map-pin"></i></div>
+                    <div class="info-box">
+                        <h3>Villa Gremo</h3>
+                        <p>Mariano Fragueiro 1701, Alta Córdoba</p>
+                    </div>
+                </div>
+
+                <a href="https://www.google.com/maps/place/Villa+Gremo+-+Club+de+Amigos/@-31.3944204,-64.1863112,17z/data=!4m6!3m5!1s0x94329900966c317b:0x41de3c3c9b812ca3!8m2!3d-31.3955926!4d-64.185882!16s%2Fg%2F11rym4bgwy?entry=ttu&g_ep=EgoyMDI2MDIwNC4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="prisma-button secondary">
+                    <i class="fas fa-location-arrow"></i> Ver Ubicación
+                </a>
+            </section>
+            <div class="cta-container">
+            <button id="btn-rsvp" class="prisma-button primary-glow">
+                <i class="fas fa-check-circle"></i> Confirmar Asistencia
+            </button>
+        </div>
+
+        <div id="rsvp-modal" class="modal-overlay hidden">
+            <div class="glass-card modal-content">
+                <button id="btn-close-modal" class="close-btn"><i class="fas fa-times"></i></button>
+                
+                <h3 class="cursive-font title-medium">Confirmar</h3>
+                <p class="modal-desc">Enviame un WhatsApp para organizarme mejor.</p>
+
+                <form id="rsvp-form" class="prisma-form">
+                    <div class="input-group">
+                        <label>Nombre y Apellido</label>
+                        <input type="text" id="guest-name" placeholder="Ej: Juan Pérez" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label>¿Cuántos son?</label>
+                        <select id="guest-count">
+                            <option value="1">Solo yo</option>
+                            <option value="2">Voy con alguien (2)</option>
+                            <option value="3">Somos 3</option>
+                            <option value="4">Somos 4</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group row-group">
+                        <label>¿Menú Celíaco?</label>
+                        <label class="switch">
+                            <input type="checkbox" id="celiac-check">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="prisma-button full-width">
+                        <i class="fab fa-whatsapp"></i> Enviar a Carmen
+                    </button>
+                </form>
+            </div>
+        </div>
+
+            <section class="glass-card gallery-card">
+                <h2 class="cursive-font title-small">Recuerdos</h2>
+                <div class="gallery-grid">
+                    <img src="assets/foto1.jpg" alt="Foto Carmen" class="gallery-img float-slow">
+                    <img src="assets/foto2.jpg" alt="Foto Carmen" class="gallery-img float-medium">
+                    <img src="assets/foto3.jpg" alt="Foto Carmen" class="gallery-img float-fast">
+                    <img src="assets/foto4.jpg" alt="Foto Carmen" class="gallery-img float-slow">
+                    <img src="assets/foto5.jpg" alt="Foto Carmen" class="gallery-img float-medium">
+                    <img src="assets/foto6.jpg" alt="Foto Carmen" class="gallery-img float-slow">
+                    <img src="assets/foto7.jpg" alt="Foto Carmen" class="gallery-img float-fast">
+                    <img src="assets/foto8.jpg" alt="Foto Carmen" class="gallery-img float-medium">
+                    <img src="assets/foto9.jpg" alt="Foto Carmen" class="gallery-img float-slow">
+                    <img src="assets/foto10.jpg" alt="Foto Carmen" class="gallery-img float-fast">
+                    <img src="assets/foto11.jpg" alt="Foto Carmen" class="gallery-img float-slow">
+                    <img src="assets/foto12.jpg" alt="Foto Carmen" class="gallery-img float-fast">
+                    <img src="assets/foto13.jpg" alt="Foto Carmen" class="gallery-img float-medium">
+                </div>
+            </section>
+
+            <div class="spacer"></div>
+        </main>
+
+        <footer class="prisma-footer">
+        <p>Diseñado con <span class="brand">Prisma UI</span></p>
+        <a href="https://prisma-ui.vercel.app" target="_blank" class="dev-link">
+            Por Máximo <i class="fas fa-external-link-alt"></i>
+        </a>
+    </footer>
+
+        <div id="music-island" class="music-island hidden-island">
+            <div class="island-content">
+                <div class="album-art">
+                    <i class="fas fa-music"></i>
+                </div>
+                <div class="track-info">
+                    <span class="track-title">Celebrando la Vida</span>
+                    <span class="track-artist">Carmen</span>
+                </div>
+                <div class="controls">
+                    <button id="btn-control" class="control-btn">
+                        <i class="fas fa-play"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+        </div>
+
+        <audio id="audio-player" loop>
+            <source src="assets/musica.mp3" type="audio/mpeg">
+        </audio>
+
+        <script src="script.js"></script>
+    </body>
+</html>
